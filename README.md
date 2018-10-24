@@ -1,5 +1,5 @@
 # Git 명령어
-#br전역 설정 정보 조회
+전역 설정 정보 조회br
  git config - -global - -list br
  전역 설정 정보 삭제시키기
  git config --global --unset-all user.email
