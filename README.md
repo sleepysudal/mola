@@ -389,10 +389,24 @@ git log -1 HEAD~1^^</pre>
 Link: [Google][googlelink]
 [googlelink]: https://google.com "Go google"</pre>
 
-[link keyword][id]
-[id]: URL "Optional Title here"
-
 Link: [Google][googlelink]
 [googlelink]: https://google.com "Go google"
     
+## 2.8 강조
+<pre>*가나다*
+_가나다_
+**가나다**
+__가나다s__
+++가나다++
+~~가나다~~</pre>
 
+*가나다*
+_가나다_
+**가나다**
+__가나다__
+++가나다++
+~~가나다~~
+
+## 2.9 이미지
+<pre>![Alt text](/path/to/img.jpg)
+![Alt text](/path/to/img.jpg "Optional title")</pre>
