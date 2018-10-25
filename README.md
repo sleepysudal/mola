@@ -243,7 +243,7 @@ git log -1 HEAD~1^^</pre>
 
 * * *
 
-# [공통] 마크다운 markdown 작성법
+# 마크다운 markdown 작성법
 
 # 1. 마크다운에 관하여
 
@@ -403,10 +403,14 @@ __가나다__
 ~~가나다~~
 
 ## 2.9 이미지
-<pre>![Alt text](/path/to/img.jpg)
-![Alt text](/path/to/img.jpg "Optional title")
+<pre>![이미지이름](이미지주소)
+중괄호 안에 이미지 이름은 어떤거든 상관없다.
 
 사이즈 조절 기능은 없기 때문에 img width ="x" height="y" /img 를 이용한다.</pre>
+
+![모모](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpdLHp2mWlYLWZNXXadrMpK11HRRr1Y0jP-ifEM3zr9czE_Y2FUeF067k)
+
+
 
 ## 3 글씨체 
 
