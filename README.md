@@ -71,3 +71,54 @@ git commit -m “<메시지>” </pre>
 
 # 3. 브랜치
 > ## 지역 브랜치 목록 보기
+<pre>git branch</pre>
+
+> ## 원격 브랜치 목록 보기
+<pre>git branch -r</pre>
+
+> ## 지역과 원격을 포함한 모든 브랜치 목록 보기
+<pre>git branch -a</pre>
+
+> ## 현재 브랜치에서 새로운 브랜치 생성하기
+<pre>git branch <새로운 브랜치></pre>
+
+> ## 다른 브랜치 체크아웃하기
+<pre>git checkout <브랜치></pre>
+
+> ## 현재 브랜치에서 새로운 브랜치 생성하고 체크아웃하기
+<pre>git checkout -b <새로운 브랜치></pre>
+
+> ## 다른 시작 지점에서 브랜치 생성하기
+<pre>git branch <새로운 브랜치> <브랜치를 생성할 위치></pre>
+
+> ## 기존의 브랜치를 새로운 브랜치로 덮어쓰기
+<pre>git branch -f <기존 브랜치> [<브랜치를 생성할 위치>]</pre>
+
+>## 브랜치를 옮기거나 브랜치명 변경하기
+<pre>git checkout -m <기존 브랜치> <새로운 브랜치></pre>
+* ### <새로운 브랜치>가 존재하지 않을 경우
+<pre>git checkout -M <기존 브랜치> <새로운 브랜치></pre>
+* ### 무조건 덮어쓰기 
+
+> ## 다른 브랜치를 현재 브랜치로 합치기
+<pre>git merge <브랜치></pre>
+
+> ## 커밋하지 않고 합치기
+<pre>git merge - -no-commit <브랜치></pre>
+
+> ## 선택하여 합치기
+<pre>git cherry-pick <커밋명></pre>
+
+> ## 커밋하지 않고 선택하여 합치기
+<pre>git cherry-pick -n <커밋명></pre>
+
+> ## 브랜치의 이력을 다른 브랜치에 합치기
+<pre>git merge - -squash <브랜치></pre>
+
+> ## 브랜치 삭제하기
+<pre>git branch -d <삭제할 브랜치></pre>
+
+* ### 삭제할 브랜치가 현재 브랜치에 합쳐졌을 경우에만
+<pre>git branch -D <삭제할 브랜치></pre>
+
+* ### 삭제할 브랜치가 현재 브랜치에 합쳐지지 않았어도
