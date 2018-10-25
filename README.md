@@ -404,9 +404,9 @@ __가나다__
 
 ## 2.9 이미지
 <pre>![Alt text](/path/to/img.jpg)
-![Alt text](/path/to/img.jpg "Optional title")</pre>
+![Alt text](/path/to/img.jpg "Optional title")
 
-* 사이즈 조절 기능은 없기 때문에 <img width="" height=""></img> 를 이용한다.
+사이즈 조절 기능은 없기 때문에 <img width="" height=""></img> 를 이용한다.</pre>
 
 ## 3 글씨체 
 
