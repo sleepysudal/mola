@@ -382,21 +382,16 @@ git log -1 HEAD~1^^</pre>
 ---------------
 
 ## 2.7 링크
-* 참조 링크
-<pre>[link keyword][id]
-[id]: URL "Optional Title here"
+* 하이퍼링크는 다음과 같은 문법을 사용한다. 
+<pre>[링크명](http://www.example.com), [링크명](http://www.example.com "사이트 제목")</pre>
 
-Link: [Google][googlelink]
-[googlelink]: https://google.com "Go google"</pre>
-
-Link: [Google][googlelink]
-[googlelink]: https://google.com "Go google"
+(http://www.naver.com), (http://www.naver.com "네이버")
     
 ## 2.8 강조
 <pre>*가나다*
 _가나다_
 **가나다**
-__가나다s__
+__가나다__
 ++가나다++
 ~~가나다~~</pre>
 
@@ -410,3 +405,20 @@ __가나다__
 ## 2.9 이미지
 <pre>![Alt text](/path/to/img.jpg)
 ![Alt text](/path/to/img.jpg "Optional title")</pre>
+
+* 사이즈 조절 기능은 없기 때문에 <img width="" height=""></img>를 이용한다.
+
+## 3 글씨체 
+
+> 이탤릭체는 다음 문법을 사용한다.
+
+<pre>*이탤릭체*, _이탤릭체_</pre>
+
+*이탤릭체*, _이탤릭체_
+
+> 볼드체는 다음 문법을 사용한다. 
+
+<pre>**볼드체**, __볼드체__</pre>
+
+**볼드체**, __볼드체__
+
