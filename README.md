@@ -406,7 +406,7 @@ __가나다__
 <pre>![Alt text](/path/to/img.jpg)
 ![Alt text](/path/to/img.jpg "Optional title")
 
-사이즈 조절 기능은 없기 때문에 <img width="" height=""></img> 를 이용한다.</pre>
+사이즈 조절 기능은 없기 때문에 <img width ="x" height="y"></img> 를 이용한다.</pre>
 
 ## 3 글씨체 
 
