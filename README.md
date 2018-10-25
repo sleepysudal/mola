@@ -359,7 +359,7 @@ git log -1 HEAD~1^^</pre>
     
 ## 2.5 칸 안에 글자 쓰기 
 
-* <pre> </pre> pre와 /pre 사이에 글을 쓰면 네모낳게 칸안에 쓴 글들이 정리되어 들어간다.
+* pre와 /pre 사이에 글을 쓰면 네모낳게 칸안에 쓴 글들이 정리되어 들어간다.
 
 <pre>가나다라
 마바사
@@ -380,6 +380,19 @@ git log -1 HEAD~1^^</pre>
 *****
 - - -
 ---------------
-    
+
+## 2.7 링크
+* 참조 링크
+<pre>[link keyword][id]
+[id]: URL "Optional Title here"
+
+Link: [Google][googlelink]
+[googlelink]: https://google.com "Go google"</pre>
+
+[link keyword][id]
+[id]: URL "Optional Title here"
+
+Link: [Google][googlelink]
+[googlelink]: https://google.com "Go google"
     
 
