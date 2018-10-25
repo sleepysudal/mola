@@ -290,7 +290,10 @@ git log -1 HEAD~1^^</pre>
 * 이메일에서 사용하는 > 블럭인용문자를 이용한다.
 
 <pre>> This is a blockqute</pre>
+
 > This is a first blockqute.
-> This is a second blockqute.
-> This is a third blockqute.
+
+>> This is a second blockqute.
+
+>>> This is a third blockqute.
 
