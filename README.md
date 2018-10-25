@@ -45,3 +45,28 @@ git commit -m “<메시지>” </pre>
 
 > ## 파일의 일부를 스테이징하기
 <pre>git add -p [<파일> [<파일> [기타 파일들…]]]</pre>
+
+> ## add 명령에서 Git 대화 모드를 사용하여 파일 추가하기
+<pre>git add -i</pre> 
+
+> ## 수정되고 추적되는 파일의 변경 사항 스테이징하기
+<pre>git add -u [<경로> [<경로>]]</pre>
+
+> ## 수정되고 추적되는 모든 파일의 변경 사항 커밋하기
+<pre>git commit -m “<메시지>” -a</pre>
+
+> ## 작업 트리의 변경 사항 돌려놓기
+<pre>git checkout HEAD <파일> [<파일>]</pre>
+
+> ## 커밋되지 않고 스테이징된 변경 사항 재설정하기
+<pre>git reset HEAD <파일> [<파일>]</pre>
+
+> ## 마지막 커밋 고치기
+<pre>git commit -m “<메시지>” - -amend</pre>
+
+> ## 이전 커밋을 수정하고 커밋 메시지를 재사용하기
+<pre>git commit -C HEAD - -amend</pre>
+
+* * *
+
+# 3. 브랜치
