@@ -122,3 +122,126 @@ git commit -m “<메시지>” </pre>
 <pre>git branch -D <삭제할 브랜치></pre>
 
 * ### 삭제할 브랜치가 현재 브랜치에 합쳐지지 않았어도
+
+* * *
+
+# 4. Git 이력
+> ## 모든 이력 보기
+<pre>git log</pre>
+
+> ## 변경 사항을 보여주는 패치와 함께 로그 표시하기
+<pre>git log -p</pre>
+
+> ## 1개의 항목만 보이도록 로그 개수 제한하기
+<pre>git log -1</pre>
+
+> ## 20개의 항목과 패치만 보이도록 로그 제한하기
+<pre>git log -20 -p</pre>
+
+> ## 지난 6시간 동안의 커밋 로그 보기
+<pre>git log - -since=”6 hours”</pre>
+
+> ## 이틀 전까지의 커밋 로그 보기
+<pre>git log - -before=”2 days”</pre>
+
+> ## HEAD보다 세 개 이전의 커밋 로그 보기
+<pre>git log -1 HEAD-3
+git log -1 HEAD^^^
+git log -1 HEAD~1^^</pre>
+
+> ## 두 지점 사이의 커밋 로그 보기
+<pre>git log <시작 지점>…<끝 지점></pre>
+* ### 시작 지점이나 끝 지점은 커밋명, 브랜치명, 혹은 태그명이 될 수 있고 조합하여 사용 가능하다.
+
+> ## 각 항목의 로그 이력 한 줄씩 보기
+<pre>git log - -pretty=oneline</pre>
+
+> ## 각 항목마다 영향 받은 줄의 통계 보기
+<pre>git log - -stat</pre>
+
+> ## 커밋할 시점의 파일 상태 보기
+<pre>git log - -name-status</pre>
+
+> ## 현재 작업 트리와 인덱스의 차이점 보기
+<pre>git diff</pre>
+
+> ## 인덱스와 저장소의 차이점 보기
+<pre>git diff - -cached</pre>
+
+> ## 작업 트리와 저장소의 차이점 보기
+<pre>git diff HEAD</pre>
+
+> ## 작업 트리와 특정 위치 간의 차이점 보기
+<pre>git diff <시작 지점></pre>
+* ### 시작 지점은 커밋명 or 브랜치명 or 태그명이다.
+
+> ## 저장소의 두 지점 사이의 차이점 보기
+<pre>git diff <시작 지점> <끝 지점></pre>
+
+> ## 차이점의 통계 보기
+<pre>git diff - -stat <시작 지점> [<끝 지점>]</pre>
+
+> ## 파일의 커밋 정보 줄 단위로 보기
+<pre>git blame <파일></pre>
+
+> ## 파일의 줄 단위의 복사, 붙여 넣기, 이동 정보 보기
+<pre>git blame -M <파일></pre>
+
+> ## 파일의 줄 단위의 이동과 원본 파일 정보 보기
+<pre>git blame -C -C <파일></pre>
+
+> ## 로그에서 복사와 붙여 넣은 정보 보기
+<pre>git log -C -C -p -1 <특정 지점></pre>
+
+* * *
+
+# 5. 원격 저장소
+> ## 저장소 복제하기
+<pre>git clone <저장소></pre>
+
+> ## 마지막 200개의 커밋만 포함하여 저장소 복제하기
+<pre>git clone - -depth 200 <저장소></pre>
+
+> ## 새로운 원격 저장소 추가하기
+<pre>git remote add <원격 저장소> <저장소 url></pre>
+
+> ## 모든 원격 브랜치 목록 보기
+<pre>git branch -r</pre>
+
+> ## 원격 브랜치에서 지역 브랜치 생성하기
+<pre>git branch <새로운 브랜치> <원격 브랜치></pre>
+
+> ## 원격 태그에서 지역 브랜치 생성하기
+<pre>git branch <새로운 브랜치> <원격 태그></pre>
+
+> ## origin 저장소에서 합치지 않고 지역 브랜치로 변경 사항 가져오기
+<pre>git fetch</pre>
+
+> ## 원격 저장소에서 합치지 않고 지역 브랜치로 변경 사항 가져오기
+<pre>git fetch <원격 저장소></pre>
+
+> ## 원격 저장소에서 변경 사항을 가져와 현재 브랜치에 합치기
+<pre>git pull <원격 저장소></pre>
+
+> ## origin 저장소에서 변경 사항을 가져와 현재 브랜치에 합치기
+<pre>git pull</pre>
+
+> ## 지역 브랜치를 원격 브랜치에 푸싱하기
+<pre>git push <원격 저장소> <지역 브랜치>:<원격 브랜치></pre>
+
+> ## 지역 브랜치를 동일한 이름의 원격 브랜치에 푸싱하기
+<pre>git push <원격 저장소> <지역 브랜치></pre>
+
+> ## 새로운 로컬 브랜치를 원격 저장소에 푸싱하기
+<pre>git push <원격 저장소> <지역 브랜치></pre>
+
+> ## 원격 저장소에서 쓸모가 없어진 원격 브랜치 제거하기
+<pre>git remote prune <원격 저장소></pre>
+
+> ## 원격 저장소를 제거하고 관련된 브랜치도 제거하기
+<pre>git remote rm <원격 저장소></pre>
+
+* * *
+
+
+
